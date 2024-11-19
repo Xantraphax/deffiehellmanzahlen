@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Diffie-Hellman Simulation</title>
+</head>
+<body>
+    <h1>Diffie-Hellman Schlüsselaustausch Simulation</h1>
+    <br>
+    <div class="main-container">
+        
+        <form id="dhForm">
+            <h2>Eingabe</h2>
+            <label for="p">Primzahl (p):</label>
+            <input type="number" id="p" required><br><br>
+
+            <label for="g">Zahl (g, muss kleiner als p sein):</label>
+            <input type="number" id="g" required><br><br>
+
+            <label for="x">Alice's geheime Zahl (x):</label>
+            <input type="number" id="x" required><br><br>
+
+            <label for="y">Bob's geheime Zahl (y):</label>
+            <input type="number" id="y" required><br><br>
+
+            <button type="button" onclick="simulateDH()">Simulieren</button>
+            <p> <br></p>
+            
+        </form>
+        <div class="result-container">
+            <h2>Ergebnisse</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
